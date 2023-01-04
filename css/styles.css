@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Yantramanav:wght@900&display=swap');
+
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Yantramanav', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0, .93);
+  color:mintcream;
+}
+
+header {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#nav-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+
+}
