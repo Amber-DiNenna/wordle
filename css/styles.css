@@ -10,7 +10,7 @@ font-family: 'Yantramanav', sans-serif; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -37,15 +37,9 @@ header {
   font-size: 1.5rem;
   padding: .25rem;
 }
+
 i {
   padding: .25rem;
-}
-
-.material-symbols-sharp {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 200,
 }
 
 .material-symbols-rounded {
@@ -53,7 +47,9 @@ i {
   'FILL' 1,
   'wght' 700,
   'GRAD' -25,
+  'opsz' 48
 }
+
 
 .board-container {
   display: flex;
@@ -61,7 +57,7 @@ i {
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
-  height: 50%;
+  /* height:fit-content; */
 }
 
 .board {
@@ -70,7 +66,8 @@ i {
   grid-gap: 5px;
   padding: 10px;
   box-sizing: border-box;
-  width: 20rem;
+  /* width: 15rem;
+  height: 15rem; */
   /* height: 60%; */
 }
 
@@ -82,7 +79,8 @@ i {
 
 .board-tile {
   border: 2px solid #3a3a3c;
-  width: 100%;
+  width: 3rem;
+  height: 3rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
