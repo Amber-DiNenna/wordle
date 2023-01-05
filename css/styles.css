@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Yantramanav:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@700&family=Hanuman:wght@900&family=Odor+Mean+Chey&family=Roboto+Slab:wght@900&family=Yantramanav:wght@900&display=swap');
 
-/* font-family: 'Roboto Slab', serif;
+/* font-family: 'Glegoo', serif;
+font-family: 'Hanuman', serif;
+font-family: 'Odor Mean Chey', serif;
+font-family: 'Roboto Slab', serif;
 font-family: 'Yantramanav', sans-serif; */
 
 * {
@@ -11,20 +14,63 @@ font-family: 'Yantramanav', sans-serif; */
 
 body {
   background-color: rgb(0, 0, 0, .93);
-  color:mintcream;
+  /* color:rgb(251, 246, 246); */
+  /* color: #dfdfdf; */
+  color: #ffffff;
 }
 
 header {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Hanuman', serif;
   display: flex;
   justify-content: space-between;
+  /* padding: 1rem; */
+  border-bottom: 1px solid rgb(58, 58, 60);
 
 }
 
-#nav-left {
+#nav-left, #nav-right {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
 
+
 }
+
+i {
+  padding: .5rem;
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 64
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+
+/* --color-tone-1: #ffffff;
+--color-tone-2: #818384;
+--color-tone-3: #565758;
+--color-tone-4: #3a3a3c;
+--color-tone-5: #272729;
+--color-tone-6: #1a1a1b;
+--color-tone-7: #121213;
+--color-tone-8: #ffffff;
+--color-tone-9: #424242;
+--color-tone-10: #dfdfdf;
+--color-tone-11: #dfdfdf;
+--color-tone-12: #dfdfdf;
+--color-nav-hover: #2f2f31;
+--opacity-50: rgba(0, 0, 0, 0.5);
+--error-background: var(--color-tone-7);
+--icon-disabled: #59595a; */
