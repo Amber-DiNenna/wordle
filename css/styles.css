@@ -10,12 +10,11 @@ font-family: 'Yantramanav', sans-serif; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
-  background-color: rgb(0, 0, 0, .93);
-  /* color:rgb(251, 246, 246); */
-  /* color: #dfdfdf; */
+  background-color: #121213;
   color: #ffffff;
 }
 
@@ -23,22 +22,23 @@ header {
   font-family: 'Hanuman', serif;
   display: flex;
   justify-content: space-between;
-  /* padding: 1rem; */
-  border-bottom: 1px solid rgb(58, 58, 60);
-
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #3a3a3c;
 }
 
 #nav-left, #nav-right {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
-
-
+  padding: .5rem;
 }
 
+#wordle {
+  font-size: 1.5rem;
+  padding: .25rem;
+}
 i {
-  padding: .5rem;
+  padding: .25rem;
 }
 
 .material-symbols-sharp {
@@ -46,31 +46,54 @@ i {
   'FILL' 0,
   'wght' 700,
   'GRAD' 200,
-  'opsz' 64
 }
 
 .material-symbols-rounded {
   font-variation-settings:
-  'FILL' 0,
+  'FILL' 1,
   'wght' 700,
-  'GRAD' 200,
-  'opsz' 48
+  'GRAD' -25,
 }
 
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 50%;
+}
 
-/* --color-tone-1: #ffffff;
---color-tone-2: #818384;
---color-tone-3: #565758;
---color-tone-4: #3a3a3c;
---color-tone-5: #272729;
---color-tone-6: #1a1a1b;
---color-tone-7: #121213;
---color-tone-8: #ffffff;
---color-tone-9: #424242;
---color-tone-10: #dfdfdf;
---color-tone-11: #dfdfdf;
---color-tone-12: #dfdfdf;
---color-nav-hover: #2f2f31;
---opacity-50: rgba(0, 0, 0, 0.5);
---error-background: var(--color-tone-7);
---icon-disabled: #59595a; */
+.board {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 20rem;
+  /* height: 60%; */
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.board-tile {
+  border: 2px solid #3a3a3c;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.keyboard-container {
+  height: 50%;
+}
