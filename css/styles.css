@@ -10,7 +10,11 @@ font-family: 'Yantramanav', sans-serif; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.game-container {
+  height: 100%;
 }
 
 body {
@@ -35,6 +39,7 @@ header {
   justify-content: space-between;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #3a3a3c;
+  padding: .5rem;
 }
 
 #nav-left, #nav-mid, #nav-right {
